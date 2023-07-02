@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --color-glassformis: blue;
+}
+
+body {
+    background: linear-gradient(45deg, #ff14eb, #5eaec2, #fa6aad, #ffee8c);
+    background-size: 500% 500%;
+    animation: gradient 9s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.glass-effect {
+    background: #fafafa49;
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.container {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 70px 20px;
+    border-radius: 50px;
+}
+
+.select-container>h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.select-container>p {
+    color: rgb(85, 85, 85);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#imageContainer {
+    position: absolute;
+    text-align:center ;
+    z-index: -99;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    background-color: #f3f3f3;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    cursor: move;
+}
+
+.image:hover {
+    transform: scale(110%);
+}
+
+
+#messageContainer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    cursor: move;
+
+    font-size: 20px;
+
+}
+
+#messageContainer p {
+    font-size: 24px;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* BOTONES */
+button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 40px;
+    margin: 5px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:hover {
+    background-color: #b700ff56;
+    color: white;
+    box-shadow: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+.heart {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    width: 350px;
+    border-radius: 40px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.second {
+    font-size: 15px;
+    margin-bottom: 10px
+}
+
+.img-gif {
+    width: 50%;
+}
+
+@media (max-width: 760px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 70%;
+    }
+}
